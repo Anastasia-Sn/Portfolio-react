@@ -1,3 +1,60 @@
+header {
+  height: 60px;
+  background: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+
+footer {
+  background-color: #4689AF;
+  padding: 50px 0;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 50px;
+  background: #FFFFFF;
+}
+
+#portfolio {
+  text-align: center;
+  background-color: #F3F3F3;
+}
+
+#contact {
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.hero-page {
+  height: 100vh;
+  background-color: #F3F3F3;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .container {
   max-width: 1300px;
   padding: 0 30px;
@@ -44,4 +101,3 @@
   line-height: 150%;
   border-radius: 40px;
 }
-

@@ -1,24 +1,14 @@
-.contact {
-  background: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 600px;
-}
-
-.contact__wrapper {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  
 }
 
-.contact__box {
+.box {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,25 +23,25 @@
   width: 50%;
 }
 
-.contact__title {
+.title {
   margin-bottom: 50px;
 }
 
-.contact__sub {
+.sub {
   font-weight: 600;
   font-size: 24px;
   color: #626262;
   margin-bottom: 10px;
 }
 
-.contact__name {
+.name {
   font-weight: 700;
   font-size: 30px;
   color: #4689AF;
   margin-bottom: 35px;
 }
 
-.contact__social {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,14 +51,23 @@
   gap: 30px;
 }
 
-.contact__link svg{
+.link svg{
   color: #E95E98;
   width: 38px;
   height: 38px;
 }
 
-.contact__link svg:hover {
+.link svg:hover {
   color: #E0196C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+  .img {
+    display: none;
+  }
 }

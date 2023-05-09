@@ -4,15 +4,15 @@ import aboutPhoto from '../../img/about-photo.png';
 
 const About = () => {
   return (
-    <section id="about" className={styles.about}>
+    <section id="about">
       <div className="container">
-        <div className={styles["about__wrapper"]}>
-          <div className={styles["about__photo"]}>
+        <div className={styles.wrapper}>
+          <div className={styles.photo}>
             <img src={aboutPhoto} alt="computer"/>
           </div>
-          <div className={styles["about__box"]}>
-            <h2 className={`${styles["about__title"]} ${"title"}`}>ab<span className="rose">o</span>ut me.</h2>
-            <p className={styles["about__text"]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <div className={styles.box}>
+            <h2 className={`${styles.title} ${"title"}`}>ab<span className="rose">o</span>ut me.</h2>
+            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ehndu a
               commodo consequat.

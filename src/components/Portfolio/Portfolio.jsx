@@ -7,25 +7,25 @@ import plant from '../../img/portfolio/plant.png';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className={styles.portfolio}>
+    <section id="portfolio">
       <div className="container">
-        <h2 className={`${styles["portfolio__title"]} ${"title"}`}>my portf<span className="rose">o</span>lio.</h2>
-        <div className={styles.portfolio__img}>
-          <div className={styles.portfolio__card}>
+        <h2 className={`${styles.title} ${"title"}`}>my portf<span className="rose">o</span>lio.</h2>
+        <div className={styles.img}>
+          <div className={styles.card}>
             <img src={interior} alt="interior"/>
-              <button className={styles.portfolio__btn}>more</button>
+              <button className={styles.btn}>more</button>
           </div>
-          <div className={styles.portfolio__card}>
+          <div className={styles.card}>
             <img src={build} alt="build"/>
-            <button className={styles.portfolio__btn}>more</button>
+            <button className={styles.btn}>more</button>
           </div>
-          <div className={styles.portfolio__card}>
+          <div className={styles.card}>
             <img src={plant} alt="plant"/>
-            <button className={styles.portfolio__btn}>more</button>
+            <button className={styles.btn}>more</button>
           </div>
-          <div className={styles.portfolio__card}>
+          <div className={styles.card}>
             <img src={ocean} alt="ocean"/>
-            <button className={styles.portfolio__btn}>more</button>
+            <button className={styles.btn}>more</button>
           </div>
         </div>
       </div>

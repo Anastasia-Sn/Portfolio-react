@@ -6,29 +6,29 @@ import contact from '../../img/contact.png';
 
 const Contact = () => {
   return (
-    <section id="contact" className={styles.contact}>
+    <section id="contact">
       <div className="container">
-        <div className={styles.contact__wrapper}>
-          <div className={styles.contact__box}>
+        <div className={styles.wrapper}>
+          <div className={styles.box}>
             <h2 className={`${styles["contact__title"]} ${"title"}`}>c<span className="rose">o</span>ntact me.</h2>
-            <div className={styles.contact__email}>
-              <p className={styles.contact__sub}>email:</p>
-              <p className={styles.contact__name}>my_name@gmail.com</p>
+            <div className={styles.email}>
+              <p className={styles.sub}>email:</p>
+              <p className={styles.name}>my_name@gmail.com</p>
             </div>
-            <div className={styles.contact__telegram}>
-              <p className={styles.contact__sub}>telegram:</p>
-              <p className={styles.contact__name}>@nick_name</p>
+            <div className={styles.telegram}>
+              <p className={styles.sub}>telegram:</p>
+              <p className={styles.name}>@nick_name</p>
             </div>
-            <div className={styles.contact__social}>
-              <a className={styles.contact__link} target="_blank" href="https://www.linkedin.com">
+            <div className={styles.social}>
+              <a className={styles.link} target="_blank" href="https://www.linkedin.com">
                 <FaLinkedin />
               </a>
-              <a className={styles.contact__link} target="_blank" href="https://github.com/">
+              <a className={styles.link} target="_blank" href="https://github.com/">
                 <FaGithub />
               </a>
             </div>
           </div>
-          <div className={styles.contact__img}>
+          <div className={styles.img}>
             <img src={contact} alt="computer"/>
           </div>
         </div>

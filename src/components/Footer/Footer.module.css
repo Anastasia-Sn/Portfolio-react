@@ -1,9 +1,4 @@
-.footer {
-  background-color: #4689AF;
-  padding: 50px 0;
-}
-
-.footer__block {
+.block {
   height: 40px;
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -19,13 +14,13 @@
   padding: 0 30px;
 }
 
-.menu__link {
+.link {
   font-size: 20px;
   font-weight: 700;
   color: #626262;
 }
 
-.menu__link:hover {
+.link:hover {
   color: #E0196C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -45,4 +40,22 @@
   .header .menu {
     display: none;
   }
+  .block {
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 30px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
 }
+
+@media screen and (max-width: 550px) {
+  .link {
+      font-size: 16px;
+    }
+    .menu ul li:not(:last-child) {
+      padding-right: 30px;
+    }
+}
+

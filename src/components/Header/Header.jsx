@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Header.module.css';
+import burger from './Burger.module.css'
 import '../../App.css';
 
 const Header = () => {
@@ -10,33 +11,33 @@ const Header = () => {
 
   return (
     <>
-      <header className={styles.header}>
+      <header>
         <div className='container'>
-          <div className={styles.header__box}>
-            <a className={`${styles['header__logo']} ${'logo'}`} href="#"><span className='rose'>on</span>dev.</a>
+          <div className={styles['box']}>
+            <a className="logo" href="#"><span className='rose'>on</span>dev.</a>
             <nav className={styles.menu}>
               <ul>
-                <li><a className={styles['menu__link']} href="#about">about me</a></li>
-                <li><a className={styles['menu__link']} href="#portfolio">portfolio</a></li>
-                <li><a className={styles['menu__link']} href="#contact">contacts</a></li>
+                <li><a className={styles['link']} href="#about">about me</a></li>
+                <li><a className={styles['link']} href="#portfolio">portfolio</a></li>
+                <li><a className={styles['link']} href="#contact">contacts</a></li>
               </ul>
             </nav>
           </div>
-          <div className={styles['burger-menu']} onClick={burgerHandler}>
-            <div className={`${styles['burger-menu__btn']} ${burgerBtn && (styles['burger-menu__btn--active'])}`}>
+          <div className={burger.menu} onClick={burgerHandler}>
+            <div className={`${burger['menu__btn']} ${burgerBtn && (burger['menu__btn--active'])}`}>
               <span></span>
               <span></span>
               <span></span>
             </div>
             {burgerBtn && (
-              <div className={styles['burger-menu__list']}>
-                <ul className={styles['burger-menu__ul']}>
-                  <li className={styles['burger-menu__item']}><a href="#" className={styles['burger-menu__link']}>home</a></li>
-                  <li className={styles['burger-menu__item']}><a href="#about" className={styles['burger-menu__link']}>about me</a></li>
-                  <li className={styles['burger-menu__item']}><a href="#portfolio" className={styles['burger-menu__link']}>portfolio</a></li>
-                  <li className={styles['burger-menu__item']}><a href="#contact" className={styles['burger-menu__link']}>contacts</a></li>
+              <div className={burger.list}>
+                <ul>
+                  <li className={burger.item}><a href="#" className={burger.link}>home</a></li>
+                  <li className={burger.item}><a href="#about" className={burger.link}>about me</a></li>
+                  <li className={burger.item}><a href="#portfolio" className={burger.link}>portfolio</a></li>
+                  <li className={burger.item}><a href="#contact" className={burger.link}>contacts</a></li>
                 </ul>
-                <button className={`${styles['burger-menu__button']} ${'btn'}`}>contact me</button>
+                <button className={`${burger.button} ${'btn'}`}>contact me</button>
               </div>)}
           </div>
         </div>
