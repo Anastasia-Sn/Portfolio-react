@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="container">
         <div className={styles.wrapper}>
           <div className={styles.box}>
-            <h2 className={`${styles["contact__title"]} ${"title"}`}>c<span className="rose">o</span>ntact me.</h2>
+            <h2 className={`${styles.title} ${"title"}`}>c<span className="rose">o</span>ntact me.</h2>
             <div className={styles.email}>
               <p className={styles.sub}>email:</p>
               <p className={styles.name}>my_name@gmail.com</p>
